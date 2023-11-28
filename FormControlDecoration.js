@@ -26,6 +26,7 @@ class FormControlDecoration{
 
     constructor(target){
         this.target = target;
+        this.target._$fcd = this;
         this.wrap = this.target.closest('.fcd-wrap');
         this.decos = this.wrap.querySelectorAll('.fcd-deco');
     }
